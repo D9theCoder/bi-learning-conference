@@ -22,6 +22,7 @@ export function ScheduleCalendarView({
   title = 'Meeting Calendar',
 }: ScheduleCalendarViewProps) {
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const [now] = useState(() => Date.now());
 
   const { tasksByDate, markers } = useMemo(() => {
     const tasksByDate: Record<string, CalendarTask[]> = {};
@@ -41,7 +42,7 @@ export function ScheduleCalendarView({
         title: schedule.title,
         due_date: dateKey,
         completed:
-          schedule.status === 'completed' || date.getTime() < Date.now(),
+          schedule.status === 'completed' || date.getTime() < now,
         category: 'meeting',
         time: date.toLocaleTimeString(undefined, {
           hour: '2-digit',
@@ -55,7 +56,7 @@ export function ScheduleCalendarView({
       tasksByDate,
       markers: Object.keys(tasksByDate),
     };
-  }, [schedules]);
+  }, [schedules, now]);
 
   const selectedKey = buildDateKey(selectedDate);
   const selectedTasks = tasksByDate[selectedKey] ?? [];

@@ -68,8 +68,18 @@ export function ScheduleFormDialog({
   useEffect(() => {
     if (!open) return;
 
-    form.setData(getScheduleFormData());
+    form.setData({
+      student_id: studentId,
+      lesson_id: schedule?.lesson_id?.toString() ?? '',
+      title: schedule?.title ?? '',
+      meeting_url: schedule?.meeting_url ?? '',
+      scheduled_at: formatForInput(schedule?.scheduled_at) ?? '',
+      duration_minutes: schedule?.duration_minutes?.toString() ?? '',
+      notes: schedule?.notes ?? '',
+      status: schedule?.status ?? 'scheduled',
+    });
     form.clearErrors();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open, schedule?.id, schedule?.updated_at, studentId]);
 
   const handleLessonChange = (lessonId: string) => {

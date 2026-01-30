@@ -11,16 +11,12 @@ interface MeetingCardProps {
   lessonId: number;
   schedule: StudentMeetingSchedule;
   hasAttended?: boolean;
-  isAdmin: boolean;
-  isTutor: boolean;
 }
 
 export function MeetingCard({
   lessonId,
   schedule,
   hasAttended,
-  isAdmin,
-  isTutor,
 }: MeetingCardProps) {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const now = new Date();
@@ -85,20 +81,6 @@ export function MeetingCard({
         onError: (errors) => {
           console.error('Failed to mark attendance:', errors);
           alert('Failed to mark attendance. Please try again.');
-        },
-      },
-    );
-  };
-
-  const handleDebugAttend = () => {
-    router.post(
-      `/lessons/${lessonId}/attend`,
-      {},
-      {
-        preserveScroll: true,
-        onError: (errors) => {
-          console.error('Failed to mark attendance:', errors);
-          alert('Failed to mark attendance: ' + JSON.stringify(errors));
         },
       },
     );
