@@ -1,8 +1,8 @@
-# Bi-Learning: A Web-Based One-to-One Mathematics Course Platform with Gamification
+# Bi-Learning: A Gamified Web-Based One-to-One Mathematics E-Learning Platform for High School Students
 
-This repository contains the source code for the paper:
+This repository contains the source code and other data access for the paper:
 
-- **Title:** Implementation of a Web-Based One-to-One Mathematics Course Platform with Gamification for High School Students
+- **Title:** Implementation of a Gamified Web-Based One-to-One Mathematics E-Learning Platform for High School Students
 - **Authors:** Kevin Purnomo, Spits Warnars Harco Leslie Hendric, Kelvin
 - **Status:** Final Draft
 
@@ -194,8 +194,8 @@ php artisan migrate:fresh --seed
 
 For questions or collaborations, please contact:
 
-| Author | Contribution | Affiliation | Email |
-|--------|--------------|-------------|-------|
-| **Kevin Purnomo** | Primary author, platform architecture development, and implementation | Computer Science Department, Bina Nusantara University, Jakarta Barat, Indonesia | kevinpurnomo06@gmail.com / kevin.purnomo@binus.ac.id |
-| **Spits Warnars Harco Leslie Hendric** | Supervision on research methodology and implementation | Computer Science Department, Bina Nusantara University, Jakarta Barat, Indonesia | spits.hendric@binus.ac.id |
-| **Kelvin** | Supervision on literature review and background research | Computer Science Department, Bina Nusantara University, Jakarta Barat, Indonesia | kelvin007@binus.ac.id |
+| Author | Contribution | Email |
+|--------|--------------|-------|
+| **Kevin Purnomo** | Developed the platform architecture, implemented the platform, and wrote the manuscript | kevinpurnomo06@gmail.com / kevin.purnomo@binus.ac.id |
+| **Spits Warnars Harco Leslie Hendric** | Supervised the research methodology and implementation and reviewed the final manuscript | spits.hendric@binus.ac.id |
+| **Kelvin** | Supervised the literature review and background research | kelvin007@binus.ac.id |
