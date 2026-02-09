@@ -1,10 +1,10 @@
-# Bi-Learning
+# Bi-Learnings: A Gamified Web-Based One-to-One Mathematics E-Learning Platform for High School Students
 
 This repository contains the source code and other data access for the paper:
 
-- **Title:** -
+- **Title:** Implementation of a Gamified Web-Based One-to-One Mathematics E-Learning Platform for High School Students
 - **Authors:** Kevin Purnomo, Spits Warnars Harco Leslie Hendric, Kelvin
-- **Status:** Final Draft
+- **Status:** Conference Submitted
 
 ---
 
